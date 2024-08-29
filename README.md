@@ -9,61 +9,6 @@ This is a web application built with Flask that provides weather forecasts and a
 - **Custom Validation**: The application includes custom input validation for city names.
 - **Responsive Design**: The user interface is built with Bootstrap for a clean and responsive design.
 
-## Installation
-
-### Prerequisites
-
-- Python 3.6 or later
-- `pip` for managing Python packages
-- A WeatherAPI key (sign up at [WeatherAPI](https://www.weatherapi.com/) if you don\'t have one)
-
-### Setup Instructions
-
-1. **Clone the repository:**
-
-   \```
-   git clone https://github.com/your-username/weather-forecast-app.git
-   cd weather-forecast-app
-   \```
-
-2. **Create a virtual environment:**
-
-   \```
-   python3 -m venv venv
-   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-   \```
-
-3. **Install dependencies:**
-
-   \```
-   pip install -r requirements.txt
-   \```
-
-4. **Set up environment variables:**
-
-   Create a `.env` file in the project root and add your WeatherAPI key:
-
-   \```
-   WEATHER_API_KEY=your_weather_api_key_here
-   \```
-
-5. **Initialize the database:**
-
-   \```
-   flask shell
-   from models import db
-   db.create_all()
-   exit()
-   \```
-
-6. **Run the application:**
-
-   \```
-   flask run
-   \```
-
-   The application will be accessible at `http://127.0.0.1:5000/`.
-
 ## Project Structure
 
 - **app.py**: The main Flask application file that contains the route definitions.
@@ -94,3 +39,10 @@ This is a web application built with Flask that provides weather forecasts and a
 - The city name input field only accepts alphabetic characters and spaces.
 - The city name cannot be empty, contain only spaces, or exceed 50 characters.
 
+![Weather Forecast Example](demo-images/1.png)
+![Weather Forecast Example](demo-images/2.png)
+![Weather Forecast Example](demo-images/3.png)
+![Weather Forecast Example](demo-images/4.png)
+![Weather Forecast Example](demo-images/5.png)
+![Weather Forecast Example](demo-images/6.png)
+![Weather Forecast Example](demo-images/7.png)
